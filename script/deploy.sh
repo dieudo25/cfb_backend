@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Install dependecies using yarn
-/opt/plesk/node/14/bin/npm install
+/opt/plesk/node/14/bin/npm install yarn --scripts-prepend-node-path
 
 # Build project
-NODE_ENV=production /opt/plesk/node/14/bin/npm run build --scripts-prepend-node-path
+/var/www/vhosts/centrefamilial.tk/cms.centrefamilial.tk/node_modules/yarn/bin/yarn install
 
 # Restart node app
 touch ./tmp/restart.txt
