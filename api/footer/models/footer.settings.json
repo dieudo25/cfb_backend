@@ -32,6 +32,14 @@
     },
     "copyright": {
       "type": "string"
+    },
+    "logo_2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.logo"
+    },
+    "text_2": {
+      "type": "richtext"
     }
   }
 }
